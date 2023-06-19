@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "+Ph0RSt+W+XJ9kVIn4lYxbN4IbIk7g/WFEN1xYoNiFZmfHWYP4ybjPmwHD6dsJB26ZdDeH/1KZHEIUfgtORPxw==",
+  "dgSpecHash": "/oaezHd/3R9Izw9wJ4ViaikF8eWRojdnKXnLMk0xfKf4MBGwl0J6Gb4m9uf6EVHHpAgGWAJgHEMceJQE4H0skA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vivek.Thapa\\source\\repos\\REPO1\\Model\\Model.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Vivek.Thapa\\Documents\\GitHub\\FinalDapperProject\\REPO1\\Model\\Model.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vivek.Thapa\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Vivek.Thapa\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
+    "C:\\Users\\Vivek.Thapa\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

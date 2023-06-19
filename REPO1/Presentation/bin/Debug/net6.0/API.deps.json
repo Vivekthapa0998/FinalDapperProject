@@ -11,6 +11,7 @@
           "BL": "1.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.13",
           "Model": "1.0.0",
+          "Npgsql": "7.0.4",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {
@@ -941,6 +942,7 @@
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {},
+      "Microsoft.Extensions.Logging.Abstractions/6.0.0": {},
       "Microsoft.Extensions.Primitives/7.0.0": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
@@ -1282,6 +1284,18 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "13.0.0.0",
             "fileVersion": "13.0.1.25517"
+          }
+        }
+      },
+      "Npgsql/7.0.4": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Npgsql.dll": {
+            "assemblyVersion": "7.0.4.0",
+            "fileVersion": "7.0.4.0"
           }
         }
       },
@@ -2294,7 +2308,8 @@
       "BL/1.0.0": {
         "dependencies": {
           "DL": "1.0.0",
-          "Model": "1.0.0"
+          "Model": "1.0.0",
+          "Npgsql": "7.0.4"
         },
         "runtime": {
           "BL.dll": {}
@@ -2305,13 +2320,17 @@
           "Dapper": "2.0.123",
           "Microsoft.Data.SqlClient": "5.1.1",
           "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
-          "Model": "1.0.0"
+          "Model": "1.0.0",
+          "Npgsql": "7.0.4"
         },
         "runtime": {
           "DL.dll": {}
         }
       },
       "Model/1.0.0": {
+        "dependencies": {
+          "Npgsql": "7.0.4"
+        },
         "runtime": {
           "Model.dll": {}
         }
@@ -2569,6 +2588,13 @@
       "path": "microsoft.extensions.dependencyinjection.abstractions/6.0.0",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
     },
+    "Microsoft.Extensions.Logging.Abstractions/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/HggWBbTwy8TgebGSX5DBZ24ndhzi93sHUBDvP1IxbZD7FDokYzdAr6+vbWGjw2XAfR2EJ1sfKUotpjHnFWPxA==",
+      "path": "microsoft.extensions.logging.abstractions/6.0.0",
+      "hashPath": "microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512"
+    },
     "Microsoft.Extensions.Primitives/7.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2750,6 +2776,13 @@
       "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
       "path": "newtonsoft.json/13.0.1",
       "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+    },
+    "Npgsql/7.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7UVPYy2RP0ci04PED1tc9ZCaTw/DfSdSkLiGEFCAvwMwsgA/bAluj1liNzP1IpN0MFofnOF0cm1zJfmbEuCehg==",
+      "path": "npgsql/7.0.4",
+      "hashPath": "npgsql.7.0.4.nupkg.sha512"
     },
     "NuGet.Common/6.3.1": {
       "type": "package",

@@ -1,16 +1,10 @@
 ﻿using Dapper;
 using DL.Contracts;
-using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using Model;
-using System;
-using System.Buffers;
+using Npgsql;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 
 
 namespace DL.Implementations
@@ -18,59 +12,55 @@ namespace DL.Implementations
     public class DlRepository : IDlRepository
     {
         private IDbConnection _db;
+
         public DlRepository(IConfiguration configuration)
         {
-            _db = new SqlConnection(configuration.GetConnectionString("DefaultConnection"));
+            _db = new NpgsqlConnection(configuration.GetConnectionString("DefaultConnection"));
         }
 
         public void Createrepo(Repository repo)
         {
-            var sql = "INSERT INTO Repositories (Name,Description,Owner) VALUES(@Name,@Description,@Owner);";
+            var sql = "INSERT INTO apistarter.repositories (name, description, owner) VALUES(@Name, @Description, @Owner);";
             _db.Execute(sql, new
             {
-                @Name = repo.Name,
-                @Description = repo.Description,
-                @Owner = repo.Owner
+                Name = repo.Name,
+                Description = repo.Description,
+                Owner = repo.Owner
             });
         }
 
         public void Deleterepo(int id)
         {
-            var sql = "DELETE FROM Repositories WHERE Id=@id;";
+            var sql = "DELETE FROM apistarter.repositories WHERE id = @id;";
             _db.Execute(sql, new
             {
-                @id = id
+                id = id
             });
         }
 
         public List<Repository> Getall()
         {
-            var sql = "SELECT * FROM Repositories";
+            var sql = "SELECT * FROM apistarter.repositories";
             return _db.Query<Repository>(sql).ToList();
         }
 
-        
         public Repository GetById(int id)
         {
-            var sql = "SELECT * FROM Repositories WHERE Id = @id";
-            return _db.Query<Repository>(sql, new {@id = id }).Single();
-            //return _db.QuerySingleOrDefault <Repository>(sql,new { @id=id });
+            var sql = "SELECT * FROM apistarter.repositories WHERE id = @id";
+            return _db.QuerySingleOrDefault<Repository>(sql, new { @id = id });
         }
 
         public void Updaterepo(Repository repo)
         {
-            var sql = "UPDATE Repositories SET Name=@Name,Description=@Description,Owner=@Owner " +
-                    "WHERE Id=@id";
+            var sql = "UPDATE apistarter.repositories SET name = @Name, description = @Description, owner = @Owner " +
+                      "WHERE id = @Id";
             _db.Execute(sql, new
             {
-                @id = repo.Id,
-                @Name = repo.Name,
-                @Description = repo.Description,
-                @Owner = repo.Owner
+                Id = repo.Id,
+                Name = repo.Name,
+                Description = repo.Description,
+                Owner = repo.Owner
             });
         }
-
-        
-       
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VIFK8eJKYEVOYstNhhmByOVfWTN2iPe0O+k5wKFCYWIvu0PUnJFPaBgq+ozSDWOsyg7CMD4M+kxQXzc+7UnBxA==",
+  "dgSpecHash": "oBQcb3HRsT6pubjYfwdOkFzsgbBMuoqE9JTFYGeO2iOfhaBVA9G9NOap9OxI5QhneHVTfZbF1q6o3vGX5F8PJA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vivek.Thapa\\source\\repos\\REPO1\\DL\\DL.csproj",
+  "projectFilePath": "C:\\Users\\Vivek.Thapa\\Documents\\GitHub\\FinalDapperProject\\REPO1\\DL\\DL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vivek.Thapa\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Vivek.Thapa\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
@@ -12,6 +12,7 @@
     "C:\\Users\\Vivek.Thapa\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.1\\microsoft.data.sqlclient.5.1.1.nupkg.sha512",
     "C:\\Users\\Vivek.Thapa\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.1.0\\microsoft.data.sqlclient.sni.runtime.5.1.0.nupkg.sha512",
     "C:\\Users\\Vivek.Thapa\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Vivek.Thapa\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Vivek.Thapa\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\Vivek.Thapa\\.nuget\\packages\\microsoft.identity.client\\4.47.2\\microsoft.identity.client.4.47.2.nupkg.sha512",
     "C:\\Users\\Vivek.Thapa\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\2.19.3\\microsoft.identity.client.extensions.msal.2.19.3.nupkg.sha512",
@@ -25,6 +26,7 @@
     "C:\\Users\\Vivek.Thapa\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Vivek.Thapa\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\Vivek.Thapa\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\Vivek.Thapa\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
     "C:\\Users\\Vivek.Thapa\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.1\\system.configuration.configurationmanager.6.0.1.nupkg.sha512",
     "C:\\Users\\Vivek.Thapa\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\Vivek.Thapa\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
